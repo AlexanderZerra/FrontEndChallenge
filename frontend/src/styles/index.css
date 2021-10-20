@@ -12,12 +12,6 @@ code {
     monospace;
 }
 
-/* body {
-  background-repeat: no-repeat;
-
-  background-size: contain;
-} */
-
 .poster {
   contain: content;
   height: 400px;

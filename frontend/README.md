@@ -13,6 +13,11 @@
 
 ***
 
+## Future Updates
+**Future updates may include: Favorites, Auth, User Profile, Top 10, Top 100...Essentially more functionality then its bare bones current counterpart**
+
+***
+
 
 ## Updates
 -  [x] Initial Framework
