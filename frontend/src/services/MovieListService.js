@@ -1,9 +1,9 @@
 import Client from './index'
 import { axiosConfig } from '../globals'
 
-export const GetPokemons = async () => {
+export const GetMovies = async () => {
   try {
-    const res = await Client.get('/discover/pokemon', axiosConfig)
+    const res = await Client.get('/discover/movie', axiosConfig)
     console.log(res.data.results)
     return res.data.results
   } catch (error) {
@@ -11,9 +11,9 @@ export const GetPokemons = async () => {
   }
 }
 
-export const GetPokemonsById = async (id) => {
+export const GetMoviesById = async (id) => {
   try {
-    const res = await Client.get(`/pokemon/${id}`, axiosConfig)
+    const res = await Client.get(`/movie/${id}`, axiosConfig)
     console.log(res)
     return res.data
   } catch (error) {

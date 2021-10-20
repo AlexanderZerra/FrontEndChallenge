@@ -1,11 +1,12 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux'
 import { composeWithDevTools } from 'redux-devtools-extension'
-import PokemonReducer from './reducers/PokemonReducer'
-import DetailReducer from './reducers/DetailReducer'
 import thunk from 'redux-thunk'
 
+import MovieReducer from './reducers/MovieReducer'
+import DetailReducer from './reducers/DetailReducer'
+
 const store = createStore(
-  combineReducers({ pokemonState: PokemonReducer, detailState: DetailReducer }),
+  combineReducers({ movieState: MovieReducer, detailState: DetailReducer }),
   composeWithDevTools(applyMiddleware(thunk))
 )
 export default store
