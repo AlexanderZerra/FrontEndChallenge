@@ -23,7 +23,10 @@ const Movies = (props) => {
     <div>
       {props.movieState.movies.map((movie) => (
         <Link key={movie.id} to={`/movie/${movie.id}`}>
-          <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} />
+          <img
+            class="poster"
+            src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+          />
           <p>{movie.title}</p>
         </Link>
       ))}

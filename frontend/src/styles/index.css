@@ -12,7 +12,14 @@ code {
     monospace;
 }
 
-body {
+/* body {
   background-repeat: no-repeat;
-  background-color: orange;
+
+  background-size: contain;
+} */
+
+.poster {
+  contain: content;
+  height: 400px;
+  width: 300px;
 }
